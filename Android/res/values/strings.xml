@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">HoDoor</string>
+    <string name="base_url">http://192.168.1.100:8000</string>
+    <string name="warningThresholdStartTime">2200</string>
+    <string name="warningThresholdEndTime">700</string>
+    <string name="preferencesName">HODOOR_PREFS</string>
+</resources>

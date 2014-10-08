@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@android:color/holo_purple"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                  android:orientation="vertical"
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:id="@+id/opener_login_form"
+                  android:padding="40dp"
+                  android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Login"
+            android:id="@+id/textView"/>
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/loginField"
+            android:imeOptions="actionNext"
+            android:layout_marginTop="10dp"
+            android:singleLine="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Password"
+            android:id="@+id/textView2"
+            android:layout_gravity="left|center_vertical"
+            android:layout_marginTop="40dp"/>
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:ems="10"
+            android:imeOptions="actionDone"
+            android:id="@+id/passwordField"
+            android:layout_gravity="left|center_vertical"
+            android:layout_marginTop="10dp"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:id="@+id/loginButton"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/openerHeaderProgress"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:visibility="visible">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/login_progress_text"
+            android:layout_gravity="center"
+            android:layout_margin="8dp"/>
+
+        <ProgressBar
+            android:id="@+id/pbHeaderProgress"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            >
+        </ProgressBar>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/opener_button_form"
+        android:layout_height="fill_parent"
+        android:layout_width="fill_parent"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/openButton"
+            android:layout_height="80dp"
+            android:layout_width="fill_parent"
+            android:layout_margin="30dp"
+            android:text="OPEN"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:layout_gravity="center_vertical"
+            android:background="@android:color/white"/>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

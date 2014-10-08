@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:background="@color/hodoor_red_background">
+
+    <LinearLayout
+        android:background="@color/hodoor_red_background"
+        android:layout_height="fill_parent"
+        android:id="@+id/statusProgress"
+        android:visibility="gone"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:layout_width="fill_parent">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/status_progress_text"
+            android:layout_gravity="center"
+            android:layout_margin="8dp"/>
+
+        <ProgressBar
+            android:layout_height="100dp"
+            android:layout_width="100dp"/>
+
+    </LinearLayout>
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_height="fill_parent"
+        android:layout_width="fill_parent">
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Door is: unknown"
+        android:gravity="center_vertical|center_horizontal"
+        android:id="@+id/doorStatusLabel"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:textIsSelectable="true"
+        android:layout_margin="30dp"
+        android:layout_centerInParent="true"/>
+    <ImageButton
+
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:src="@drawable/eyecon"
+        android:layout_alignParentEnd="false"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="60dp"
+        android:background="@android:color/transparent"
+        android:id="@+id/viewNowButton"/>
+    </RelativeLayout>
+</LinearLayout>
+

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <LinearLayout
+        android:background="@android:color/white"
+        android:layout_height="50dp"
+        android:layout_width="fill_parent"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_height="fill_parent"
+            android:layout_width="0dp"
+            android:gravity="left"
+            android:layout_weight="1">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:id="@+id/imageView"
+                android:src="@drawable/hodoorlogo"
+                android:padding="5dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_height="fill_parent"
+            android:layout_width="0dp"
+            android:gravity="right"
+            android:layout_weight="1">
+            <Button
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Refresh"
+                android:id="@+id/refreshButton"
+                android:layout_gravity="left|center_vertical"/>
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                android:layout_height="50dp"
+                android:layout_width="50dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pager"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        />
+    <com.viewpagerindicator.CirclePageIndicator
+        android:id="@+id/indicator"
+        android:padding="10dip"
+        android:background="@color/hodoor_red_background"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        />
+</LinearLayout>
